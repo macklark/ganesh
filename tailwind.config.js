@@ -9,7 +9,7 @@ export default {
       'orange': '#F2AA4CFF',
       'white': '#FFFFFFFF',
       'grey': '#94A3B8',
-      'blue': '#0284C7'
+      'lite-yellow': '#FFEB99'
     }
   },
   plugins: [],

@@ -20,7 +20,7 @@
     </h2>
     <p class="text-justify text-sm md:text-md pt-5 text-slate-500">
       Hello there! 👋 I am a frontend developer at <a
-        class="text-red-800 hover:underline decoration-solid"
+        class="text-red-900 decoration-solid"
         href="https://www.bigbasket.com/about-us/">Bigbasket</a
       >, where I collaborate with a team of professional frontend developers on
       the development of the Bigbasket web-based application.

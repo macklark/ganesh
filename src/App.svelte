@@ -15,12 +15,12 @@
     <h1 class="text-center text-xl md:text-3xl font-bold pt-5">
       Ganesh Kolavennu
     </h1>
-    <h3 class="text-center text-sm md:text-md font-medium pt-3 text-slate-600">
+    <h2 class="text-center text-sm md:text-md font-medium pt-3 text-slate-600">
       Software Engineer . Tech Enthusiast
-    </h3>
+    </h2>
     <p class="text-justify text-sm md:text-md pt-5 text-slate-500">
       Hello there! 👋 I am a frontend developer at <a
-        class="text-red-500 hover:underline decoration-solid"
+        class="text-red-800 hover:underline decoration-solid"
         href="https://www.bigbasket.com/about-us/">Bigbasket</a
       >, where I collaborate with a team of professional frontend developers on
       the development of the Bigbasket web-based application.
@@ -29,17 +29,20 @@
   <nav class="flex justify-center pt-8 gap-x-1 items-center">
     <a
       href="https://github.com/macklark"
+      aria-label="Link to Ganesh Kolavennu's Github page"
       class="hover:bg-slate-200 transition-all ease-in p-2 rounded-md"
     >
       <Icon icon="line-md:github-twotone" style="font-size: 26px;" />
     </a>
     <a
+      aria-label="Link to Ganesh Kolavennu's Linkedin page"
       href="https://www.linkedin.com/in/ganesh-kolavennu-65a809179/"
       class="hover:bg-slate-200 transition-all ease-in p-2 rounded-md"
     >
       <Icon icon="line-md:linkedin" style="font-size: 26px;" />
     </a>
     <a
+      aria-label="Mail to Ganesh Kolavennu"
       href="mailto:ganesh.kolavennu@gmail.com"
       class="hover:bg-slate-200 transition-all ease-in p-2 rounded-md"
     >

@@ -8,7 +8,7 @@
     href="/"
     class="text-md font-light text-gray-600 hover:underline hover:text-blue-600"
   >
-    {title}
+    {title}test
   </a>
   <Status status="In progress" />
 </div>

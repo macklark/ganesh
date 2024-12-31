@@ -1,5 +1,6 @@
 <script>
   import Icon from "@iconify/svelte";
+  import Blog from "./modules/blog/Blog.svelte";
 </script>
 
 <div class="flex flex-col md:w-1/3 w-4/5 mx-auto">
@@ -45,4 +46,5 @@
       <Icon icon="line-md:email-twotone" style="font-size: 26px;" />
     </a>
   </nav>
+  <Blog />
 </div>

@@ -8,7 +8,7 @@ export default function Intro() {
             </CardHeader>
             <CardContent>
                 <p className="text-xs text-left tracking-light text-secondary-foreground">
-                    Hi I'm Ganesh, I'm a front-end and web developer with industry experience in e-commerce grocery platforms. Passionate about clean, user-focused design and always exploring new tech.
+                    Hi I&apos;m Ganesh, I&apos;m a front-end and web developer with industry experience in e-commerce grocery platforms. Passionate about clean, user-focused design and always exploring new tech.
                 </p>
             </CardContent>
         </Card>

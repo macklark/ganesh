@@ -1,5 +1,7 @@
 import { Separator } from "@/components/ui/separator"
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
+
+import { Icon } from "./icon";
 
 interface Item {
     title: string;
@@ -7,8 +9,8 @@ interface Item {
 };
 
 const programmingLanguages = [
-    { title: 'HTML', icon: 'HTML' },
-    { title: 'CSS', icon: 'CSS' },
+    { title: 'HTML', icon: 'html' },
+    { title: 'CSS', icon: 'css' },
     { title: 'Typescript', icon: 'typescript' },
     { title: 'Python', icon: 'python' }
 ];
@@ -34,6 +36,7 @@ function Iterator({ items }: IteratorProps) {
             {items.map((item, index) => (
                 <Button asChild variant={'outline'} className="bg-primary text-secondary-foreground" key={index}>
                     <li>
+                        <Icon name={item.icon} />
                         {item.title}
                     </li>
                 </Button>

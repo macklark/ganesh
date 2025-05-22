@@ -3,6 +3,7 @@ import './globals.css';
 import Intro from './components/intro';
 import Connect from './components/connect';
 import Skills from './components/skills';
+import Projects from './components/projects';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Intro />
       <Skills />
       <Connect />
+      {/* <Projects /> */}
     </main>
   );
 }

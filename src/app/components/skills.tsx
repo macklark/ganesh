@@ -1,46 +1,24 @@
 import { Separator } from "@/components/ui/separator"
-import { Button } from "@/components/ui/button"
 
-import { Icon } from "./icon";
+import Section from "./section";
+import Iterator from "./iterator";
 
-interface Item {
-    title: string;
-    icon: string;
-};
-
-const programmingLanguages = [
-    { title: 'HTML', icon: 'html' },
-    { title: 'CSS', icon: 'css' },
-    { title: 'Typescript', icon: 'typescript' },
-    { title: 'Python', icon: 'python' }
-];
+import { programmingLanguages, webDevelopmentFrameworks, frontendDevelopment } from "@/lib/data";
 
 export default function Skills() {
     return(
         <section className="col-start-3 col-span-5">
             <h2 className="text-2xl font-bold tracking-light text-primary-foreground">Skills</h2>
-            <Separator className="my-4 w-full" />
-            <h3 className="text-xl font-semibold tracking-light text-primary-foreground">Programming Languages</h3>
-            <Iterator items={programmingLanguages} />
+            <Separator className="mt-4 w-full" />
+            <Section title="Programming languages" className="text-xl font-semibold tracking-light text-primary-foreground pt-4">
+                <Iterator items={programmingLanguages} />
+            </Section>
+            <Section title="Web Development Frameworks" className="text-xl font-semibold tracking-light text-primary-foreground pt-4">
+                <Iterator items={webDevelopmentFrameworks} />
+            </Section>
+            <Section title="Front-end Development" className="text-xl font-semibold tracking-light text-primary-foreground pt-4">
+                <Iterator items={frontendDevelopment} />
+            </Section>
         </section>
-    )
-};
-
-type IteratorProps = {
-    items: Item[];
-};
-
-function Iterator({ items }: IteratorProps) {
-    return(
-        <ul className="pt-4 flex flex-wrap gap-2">
-            {items.map((item, index) => (
-                <Button asChild variant={'outline'} className="bg-primary text-secondary-foreground" key={index}>
-                    <li>
-                        <Icon name={item.icon} />
-                        {item.title}
-                    </li>
-                </Button>
-            ))}
-        </ul>
     )
 };

@@ -5,7 +5,7 @@ import { Mail, Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Connect() {
     return(
-        <Card className="col-start-1 col-span-2 bg-primary text-primary-foreground gap-2 py-6">
+        <Card className="bg-primary text-primary-foreground py-6">
             <CardHeader>
                 <CardTitle>Connect</CardTitle>
             </CardHeader>

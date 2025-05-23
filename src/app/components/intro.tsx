@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Intro() {
     return(
-        <Card className="col-span-2 bg-primary text-primary-foreground gap-2 py-6">
+        <Card className="bg-primary text-primary-foreground py-6">
             <CardHeader>
                 <CardTitle>Ganesh Kolavennu</CardTitle>
             </CardHeader>

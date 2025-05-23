@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Icon from "./icon";
+import Icon from "./iconos";
 
 interface Item {
     title: string;

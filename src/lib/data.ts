@@ -19,7 +19,7 @@ export const frontendDevelopment = [
 export const projects = [
     {  
         title: 'Tic-Tac-Toe',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, velit nulla. Consequatur officia fugiat reiciendis placeat, cumque neque, quia vero harum atque est, ad amet eaque deleniti in saepe blanditiis!',
+        description: 'Simple web based game of the classic tic-tac-toe, built with Next. js and Tailwind CSS',
         link: 'https://github.com/macklark/tic-tac-toe'
     }
 ];

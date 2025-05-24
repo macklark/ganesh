@@ -4,6 +4,7 @@ import Intro from './components/intro';
 import Connect from './components/connect';
 import Skills from './components/skills';
 import Projects from './components/projects';
+import Work from './components/work';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="col-start-3 col-span-5 space-y-8">
         <Skills />
         <Projects />
+        <Work />
       </div>
     </main>
   );

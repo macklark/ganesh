@@ -16,7 +16,7 @@ export default function Iterator({items}: IteratorProps) {
             {items.map((item, index) => (
                 <Button asChild variant={'outline'} className="bg-primary text-secondary-foreground" key={index}>
                     <li>
-                        <Icon name={item.icon} className="w-4 h-4" />
+                        <Icon name={item.icon} className="w-5 h-5" />
                         {item.title}
                     </li>
                 </Button>

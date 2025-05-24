@@ -7,7 +7,7 @@ import { programmingLanguages, webDevelopmentFrameworks, frontendDevelopment } f
 
 export default function Skills() {
     return(
-        <section className="col-start-3 col-span-5">
+        <section>
             <h2 className="text-2xl font-bold tracking-light text-primary-foreground">Skills</h2>
             <Separator className="mt-4 w-full" />
             <Section title="Programming languages" className="text-xl font-semibold tracking-light text-primary-foreground pt-4">

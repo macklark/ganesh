@@ -1,65 +1,113 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="flex flex-col items-center pt-12 sm:pt-16 min-h-screen px-4">
+      <div className="w-full max-w-2xl">
+        <h1 className="text-md text-gray-400">Hi I am</h1>
+        <h1 className="text-3xl sm:text-4xl text-white">Ganesh Kolavennu</h1>
+      </div>
+
+      <div className="w-full max-w-2xl mt-10 sm:mt-12">
+        <h2 className="text-lg font-semibold text-white mb-4">What do I do?</h2>
+        <ul className="space-y-3 text-sm">
+          <li className="flex gap-3">
+            <span className="text-white/20 select-none shrink-0">01</span>
+            <span className="text-white/50">Frontend engineer on paper, fullstack developer in practice — comfortable across the entire stack</span>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-white/20 select-none shrink-0">02</span>
+            <span className="text-white/50">Always building and learning, with a deep curiosity for how things work under the hood</span>
+          </li>
+          <li className="flex gap-3">
+            <span className="text-white/20 select-none shrink-0">03</span>
+            <span className="text-white/50">AI enthusiast and ML engineer, exploring the intersection of intelligent systems and real-world products</span>
+          </li>
+        </ul>
+      </div>
+
+      <footer className="fixed bottom-0 left-0 right-0 pb-6 sm:pb-8 flex justify-center gap-4 sm:gap-6">
+        <a
+          href="mailto:ganesh.kolavennu@proton.me"
+          className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          <span className="hidden sm:inline">ganesh.kolavennu@proton.me</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ganesh-kolavennu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect width="4" height="12" x="2" y="9" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+          <span className="hidden sm:inline">ganesh-kolavennu</span>
+        </a>
+        <a
+          href="https://x.com/GKolavennu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.776-8.906L2.145 2.25H8.59l4.277 5.64L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
+          </svg>
+          <span className="hidden sm:inline">GKolavennu</span>
+        </a>
+        <a
+          href="https://github.com/macklark"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S9 17.44 9 18v4" />
+            <path d="M9 18c-4.51 2-5-2-7-2" />
+          </svg>
+          <span className="hidden sm:inline">macklark</span>
+        </a>
+      </footer>
+    </main>
   );
 }

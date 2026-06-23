@@ -12,7 +12,7 @@ export default function Notes() {
   return (
     <main className="flex flex-col items-center pt-24 sm:pt-28 min-h-screen px-4">
       <div className="w-full max-w-2xl">
-        <h1 className="text-md text-gray-400">Notes</h1>
+        <h1 className="text-md text-gray-400">My</h1>
         <h2 className="text-3xl sm:text-4xl text-white">Learnings</h2>
       </div>
 

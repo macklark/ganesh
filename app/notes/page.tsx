@@ -6,6 +6,11 @@ const notes = [
     description: "my notes & code while learning javascript",
     link: "https://github.com/macklark/learn-javascript",
   },
+  {
+    title: "learn-react",
+    description: "my notes & code while learning react",
+    link: "https://github.com/macklark/learn-react",
+  },
 ];
 
 export default function Notes() {

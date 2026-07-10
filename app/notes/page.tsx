@@ -11,6 +11,11 @@ const notes = [
     description: "my notes & code while learning react",
     link: "https://github.com/macklark/learn-react",
   },
+  {
+    title: "learn-python-oop",
+    description: "my notes & code while learning OOP with python",
+    link: "https://github.com/macklark/learn-python-oop"
+  }
 ];
 
 export default function Notes() {

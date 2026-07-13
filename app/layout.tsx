@@ -25,7 +25,7 @@ export default function RootLayout({
         {children}
         <footer className="fixed bottom-0 left-0 right-0 pb-6 sm:pb-8 flex justify-center gap-4 sm:gap-6">
           <a
-            href="mailto:ganesh.kolavennu@proton.me"
+            href="mailto:hi@ganeshkolavennu.me"
             className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
           >
             <svg

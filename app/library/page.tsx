@@ -116,14 +116,14 @@ export default function Library() {
   const [active, setActive] = useState<(typeof tabs)[number]["key"]>("books");
 
   return (
-    <main className="flex flex-col items-center pt-24 sm:pt-28 min-h-screen px-4">
+    <main className="flex flex-col items-center pt-24 sm:pt-28 px-4">
       <div className="w-full max-w-2xl">
-        <h1 className="text-md text-gray-400">My</h1>
-        <h2 className="text-3xl sm:text-4xl text-white">Library</h2>
+        <h1 className="text-md text-gray-500">My</h1>
+        <h2 className="text-3xl sm:text-4xl text-black">Library</h2>
       </div>
 
       <div className="w-full max-w-2xl mt-10 sm:mt-12 flex flex-col items-center">
-        <span className="text-xs uppercase tracking-widest text-white/30">
+        <span className="text-xs uppercase tracking-widest text-black/30">
           {active === "books" ? "Currently Reading" : "Currently Playing"}
         </span>
         {active === "books" ? (
@@ -144,11 +144,11 @@ export default function Library() {
             placeholderEmoji="🎮"
           />
         )}
-        <div className="mt-2 h-2 w-20 rounded-full bg-white/10 blur-sm" />
-        <span className="mt-4 text-white text-base">
+        <div className="mt-2 h-2 w-20 rounded-full bg-black/10 blur-sm" />
+        <span className="mt-4 text-black text-base">
           {active === "books" ? currentlyReading.title : currentlyPlaying.title}
         </span>
-        <span className="text-white/40 text-sm">
+        <span className="text-black/40 text-sm">
           {active === "books" ? currentlyReading.author : currentlyPlaying.platform}
         </span>
       </div>
@@ -160,8 +160,8 @@ export default function Library() {
             onClick={() => setActive(key)}
             className={`text-sm cursor-pointer transition-colors ${
               active === key
-                ? "text-white"
-                : "text-white/30 hover:text-white/70"
+                ? "text-black"
+                : "text-black/30 hover:text-black/70"
             }`}
           >
             {label}
@@ -174,7 +174,7 @@ export default function Library() {
           ? books.map(({ title, author, cover, rating }, index) => (
               <div
                 key={title}
-                className="flex items-center gap-3 p-2 border border-white/10 hover:border-white/25 rounded-lg transition-colors"
+                className="flex items-center gap-3 p-2 border border-black/10 hover:border-black/25 rounded-lg transition-colors"
               >
                 <MediaCover
                   title={title}
@@ -184,10 +184,10 @@ export default function Library() {
                   sizes="40px"
                 />
                 <div className="flex flex-col min-w-0">
-                  <span className="block text-sm text-white/80 leading-snug truncate">
+                  <span className="block text-sm text-black/80 leading-snug truncate">
                     {title}
                   </span>
-                  <p className="text-xs text-white/30 leading-relaxed truncate">
+                  <p className="text-xs text-black/30 leading-relaxed truncate">
                     {author}
                   </p>
                   <span
@@ -201,7 +201,7 @@ export default function Library() {
           : games.map(({ title, platform, cover, rating }, index) => (
               <div
                 key={title}
-                className="flex items-center gap-3 p-2 border border-white/10 hover:border-white/25 rounded-lg transition-colors"
+                className="flex items-center gap-3 p-2 border border-black/10 hover:border-black/25 rounded-lg transition-colors"
               >
                 <MediaCover
                   title={title}
@@ -212,10 +212,10 @@ export default function Library() {
                   placeholderEmoji="🎮"
                 />
                 <div className="flex flex-col min-w-0">
-                  <span className="block text-sm text-white/80 leading-snug truncate">
+                  <span className="block text-sm text-black/80 leading-snug truncate">
                     {title}
                   </span>
-                  <p className="text-xs text-white/30 leading-relaxed truncate">
+                  <p className="text-xs text-black/30 leading-relaxed truncate">
                     {platform}
                   </p>
                   <span

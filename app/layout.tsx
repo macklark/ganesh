@@ -20,13 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${ubuntu.className} h-full`}>
-      <body className="min-h-full bg-black">
+      <body className="min-h-full bg-white">
         <Nav />
         {children}
-        <footer className="fixed bottom-0 left-0 right-0 pb-6 sm:pb-8 flex justify-center gap-4 sm:gap-6">
+        <footer className="pt-12 pb-6 sm:pb-8 flex justify-center gap-4 sm:gap-6">
           <a
             href="mailto:hi@ganeshkolavennu.me"
-            className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
+            className="flex items-center gap-2 text-black/40 hover:text-black text-sm transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function RootLayout({
             href="https://www.linkedin.com/in/ganesh-kolavennu/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
+            className="flex items-center gap-2 text-black/40 hover:text-black text-sm transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ export default function RootLayout({
             href="https://x.com/GKolavennu"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
+            className="flex items-center gap-2 text-black/40 hover:text-black text-sm transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ export default function RootLayout({
             href="https://github.com/macklark"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
+            className="flex items-center gap-2 text-black/40 hover:text-black text-sm transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
